@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Healing Hands | Home Care Nursing Services</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4fbfa;
+    color: #183c53;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background: white;
+    text-align: center;
+    padding: 40px 15px 30px;
+    border-bottom: 1px solid #e0f2f0;
+}
+
+.logo {
+    width: 100%;
+    max-width: 750px;
+    height: auto;
+    display: block;
+    margin: 0 auto 16px;
+}
+
+.black-logo {
+    max-width: 280px;
+    background: black;
+    border-radius: 10px;
+    margin: 12px auto 20px;
+}
+
+.brand {
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 6vw, 56px);
+    font-weight: bold;
+    color: #087f77;
+    margin-bottom: 4px;
+    letter-spacing: 0.5px;
+}
+
+.subtitle {
+    color: #07569b;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    color: #078b7d;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 22px;
+    margin: 8px 0 14px;
+}
+
+.quote {
+    display: inline-block;
+    padding: 10px 24px;
+    background: #e0f7f3;
+    border-radius: 30px;
+    color: #07569b;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto 16px;
+}
+
+header p {
+    margin-bottom: 0;
+    color: #405d69;
+}
+
+/* Updated Nav with Corner DP */
+nav {
+    background: #07569b;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.nav-dp-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-dp-wrapper {
+    position: relative;
+    width: 42px;
+    height: 42px;
+}
+
+.nav-dp {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+    display: block;
+}
+
+.dp-status {
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 10px;
+    height: 10px;
+    background: #25d366;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #b9fff4;
+}
+
+main {
+    padding: 35px 0 45px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #e1f8f4, #ffffff);
+    border: 1px solid #b8e3df;
+    border-radius: 16px;
+    padding: 40px 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    color: #07569b;
+    font-size: clamp(24px, 3.8vw, 36px);
+    line-height: 1.35;
+    margin-bottom: 14px;
+}
+
+.hero h2 {
+    margin: 0 0 14px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #3b5765;
+}
+
+.section {
+    margin: 0 0 32px 0;
+    background: white;
+    border: 1px solid #b8e3df;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.section-title {
+    background: linear-gradient(90deg, #07978b, #08776f);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 14px 24px;
+}
+
+.section-title small {
+    font-size: 13px;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 2px;
+}
+
+.section-content {
+    padding: 28px 24px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    padding: 22px;
+    border: 1px solid #c3e8e3;
+    background: #fbffff;
+    border-radius: 10px;
+}
+
+.service-card h3 {
+    color: #087f77;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-card p {
+    color: #526d79;
+    margin-bottom: 0;
+    line-height: 1.6;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 14px;
+}
+
+.highlight {
+    background: #e8f8f6;
+    padding: 22px;
+    border-radius: 10px;
+    margin-top: 18px;
+}
+
+.highlight h3 {
+    margin-bottom: 12px;
+}
+
+.highlight p:last-child {
+    margin-bottom: 0;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    border: 1px solid #b8e3df;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.form-heading {
+    background: #07978b;
+    color: white;
+    font-weight: bold;
+    padding: 12px 16px;
+    font-size: 15px;
+}
+
+.form-body {
+    padding: 20px 16px;
+}
+
+.field {
+    margin-bottom: 16px;
+}
+
+.field:last-child {
+    margin-bottom: 0;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    font-size: 13.5px;
+    margin-bottom: 6px;
+}
+
+.field input,
+.field textarea,
+.field select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b8d8dd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+}
+
+.field textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: normal;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.options input {
+    width: auto;
+}
+
+.terms h3 {
+    color: #087f77;
+    margin: 24px 0 10px;
+    font-size: 18px;
+}
+
+.terms h3:first-child {
+    margin-top: 0;
+}
+
+.terms ul {
+    padding-left: 22px;
+    margin-bottom: 16px;
+}
+
+.terms li {
+    margin-bottom: 8px;
+    color: #405d69;
+}
+
+.terms p {
+    color: #405d69;
+    margin-bottom: 14px;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 30px;
+    padding: 13px 28px;
+    background: #087f75;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 8px 6px;
+    transition: background 0.2s ease;
+}
+
+.button:hover {
+    background: #055e57;
+}
+
+.whatsapp {
+    background: #168c54;
+}
+
+.whatsapp:hover {
+    background: #106b3f;
+}
+
+.contact {
+    background: #e6f7f4;
+    border-radius: 14px;
+    padding: 38px 24px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact h2 {
+    color: #07569b;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    margin-bottom: 14px;
+}
+
+.phone {
+    font-size: 28px;
+    font-weight: bold;
+    color: #087f75;
+    margin: 10px 0 16px;
+    letter-spacing: 1px;
+}
+
+.thank-you {
+    margin-top: 24px;
+    color: #087f75;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-size: 21px;
+}
+
+footer {
+    background: #064b69;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+    font-size: 14px;
+}
+
+footer b {
+    display: inline-block;
+    margin-bottom: 6px;
+}
+
+footer p {
+    margin-bottom: 4px;
+}
+
+footer p:last-child {
+    margin-top: 8px;
+    margin-bottom: 0;
+    opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 94%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .services-grid,
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .section-content {
+        padding: 20px 16px;
+    }
+
+    .hero {
+        padding: 30px 16px;
+    }
+
+    .tagline {
+        font-size: 19px;
+    }
+
+    .quote {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#nature">About Services</a>
+        <a href="#request">Request Form</a>
+        <a href="#terms">Terms & Conditions</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header id="home">
+    <div class="container">
+
+        <!-- Keep the white logo image in this folder -->
+        <img
+            src="WhatsApp Image 2026-10-13 at 2.53.00 AM.jpeg"
+            alt="Healing Hands logo on white background"
+            class="logo"
+        >
+
+        <!-- Keep the black logo image in this folder -->
+    
+        <div class="brand">HEALING HANDS</div>
+
+        <div class="subtitle">
+            HOME CARE NURSING SERVICES
+        </div>
+
+        <div class="tagline">
+            Motherly Care, Professional Nursing.
+        </div>
+
+        <div class="quote">
+            “Nurse Is the Second Name of a Mother.”
+        </div>
+
+        <p>
+            Compassion in Every Touch, Comfort in Every Care. ❤️
+        </p>
+
+    </div>
+</header>
+
+
+
+<main class="container">
+
+    <section class="hero" id="services">
+
+        <h1>
+            🏥 Professional Home Care Nursing Services in Mumbai
+        </h1>
+
+        <h2>
+            Caring for Your Loved Ones with Compassion and Responsibility ❤️
+        </h2>
+
+        <p>
+            We aim to help patients and their families access reliable,
+            compassionate and professional home care nursing services.
+        </p>
+
+    </section>
+
+    <section class="section">
+
+        <div class="section-title">
+            Our Nursing Services
+        </div>
+
+        <div class="section-content services-grid">
+
+            <div class="service-card">
+                <h3>👩‍⚕️ Qualified & Skilled Nursing Staff</h3>
+                <p>
+                    We aim to provide qualified and trained male and female
+                    nursing staff according to the patient's needs and care
+                    requirements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>🩺 12-Hour & 24-Hour Nursing Care</h3>
+                <p>
+                    Flexible 12-hour and 24-hour nursing arrangements,
+                    subject to staff availability and patient requirements.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>🤝 Personalised Patient Care</h3>
+                <p>
+                    Care arrangements tailored to the patient's medical
+                    condition, level of dependency and family needs.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>💙 Therapeutic Relationship Between Nurse & Patient</h3>
+                <p>
+                    We value a professional therapeutic relationship built
+                    on trust, empathy, respect, effective communication and
+                    emotional support, while maintaining patient dignity,
+                    privacy and appropriate professional boundaries.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>📋 Responsible Service Coordination</h3>
+                <p>
+                    We coordinate between patients, families and nursing
+                    staff to communicate care requirements, duty schedules,
+                    payment arrangements and service-related concerns clearly.
+                </p>
+            </div>
+
+            <div class="service-card">
+                <h3>👨‍👩‍👧 Support for Patients & Families</h3>
+                <p>
+                    We aim to help families find suitable nursing support
+                    for elderly care, bedridden patients, assistance with
+                    daily activities and post-hospital care.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+
+        <div class="section-title">
+            🤝 Our Promise
+        </div>
+
+        <div class="section-content">
+
+            <p>
+                Our goal is to promote compassionate, responsible and
+                professional home care nursing through clear communication
+                and transparent service terms. Staff qualifications,
+                experience, suitability and availability will be considered
+                according to each patient's requirements.
+            </p>
+
+            <div class="highlight">
+                <h3>
+                    ❤️ Your Loved Ones Deserve Care, Comfort and Respect.
+                </h3>
+
+                <p>
+                    📍 <b>Service Area:</b> Mumbai, Maharashtra
+                </p>
+
+                <p>
+                    📞 <b>Contact Us:</b> Discuss your patient's requirements,
+                    available nursing staff and service charges with us.
+                </p>
+
+                <p>
+                    <b>Call or message hours: 4:00 PM onwards.</b>
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section" id="nature">
+
+        <div class="section-title">
+            Nature of Our Services
+        </div>
+
+        <div class="section-content">
+
+            <p>
+                Healing Hands Home Care Nursing Services provides home care
+                nursing arrangements according to patients' needs and staff
+                availability. We coordinate nursing assignments, attendance,
+                duty schedules, payment arrangements and routine service-related
+                concerns to ensure clear communication between patients,
+                their families and nursing staff.
+            </p>
+
+            <p>
+                Our aim is to provide suitable nursing staff and organised
+                service coordination while maintaining professional standards,
+                privacy and transparent terms and conditions.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="section" id="request">
+
+        <div class="section-title">
+            📋 Patient & Family Information Form
+            <br>
+            <small>(Home Care Nursing Service Request)</small>
+        </div>
+
+        <div class="section-content">
+
+            <p>
+                Please fill in the details below. This information helps
+                us understand your requirements and coordinate service enquiries.
+            </p>
+
+            <form id="patientForm">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+                        <div class="form-heading">1. PATIENT DETAILS</div>
+
+                        <div class="form-body">
+
+                            <div class="field">
+                                <label>Full Name</label>
+                                <input name="Patient Full Name" required>
+                            </div>
+
+                            <div class="field">
+                                <label>Age</label>
+                                <input name="Age" type="number" min="0" max="120">
+                            </div>
+
+                            <div class="field">
+                                <label>Weight (approx.) in kg</label>
+                                <input name="Weight">
+                            </div>
+
+                            <div class="field">
+                                <label>Gender</label>
+                                <div class="options">
+                                    <label><input type="radio" name="Gender" value="Male"> Male</label>
+                                    <label><input type="radio" name="Gender" value="Female"> Female</label>
+                                    <label><input type="radio" name="Gender" value="Other"> Other</label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label>Medical Condition / Diagnosis (if any)</label>
+                                <textarea name="Medical Condition"></textarea>
+                            </div>
+
+                            <div class="field">
+                                <label>Any Special Care Requirements</label>
+                                <textarea name="Special Care Requirements"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-heading">2. REQUIRED NURSING STAFF</div>
+
+                        <div class="form-body">
+
+                            <div class="field">
+                                <label>Preferred Nurse</label>
+                                <div class="options">
+                                    <label><input type="radio" name="Preferred Nurse" value="Male"> Male</label>
+                                    <label><input type="radio" name="Preferred Nurse" value="Female"> Female</label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label>Experience Level</label>
+                                <div class="options">
+                                    <label><input type="radio" name="Experience Level" value="Experienced"> Experienced</label>
+                                    <label><input type="radio" name="Experience Level" value="Fresh"> Fresh</label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label>Duty Hours</label>
+                                <div class="options">
+                                    <label><input type="radio" name="Duty Hours" value="12 Hours"> 12 Hours</label>
+                                    <label><input type="radio" name="Duty Hours" value="24 Hours"> 24 Hours</label>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label>Start Date (Preferred)</label>
+                                <input name="Preferred Start Date" type="date">
+                            </div>
+
+                            <div class="field">
+                                <label>Any Specific Instructions</label>
+                                <textarea name="Specific Instructions"></textarea>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-heading">3. PATIENT'S ADDRESS / LOCATION</div>
+
+                        <div class="form-body">
+
+                            <div class="field">
+                                <label>Flat / House No.</label>
+                                <input name="Flat / House No">
+                            </div>
+
+                            <div class="field">
+                                <label>Building / Society Name</label>
+                                <input name="Building / Society">
+                            </div>
+
+                            <div class="field">
+                                <label>Area / Locality</label>
+                                <input name="Area / Locality">
+                            </div>
+
+                            <div class="field">
+                                <label>City</label>
+                                <input name="City" value="Mumbai">
+                            </div>
+
+                            <div class="field">
+                                <label>Pin Code</label>
+                                <input name="Pin Code" inputmode="numeric">
+                            </div>
+
+                            <div class="field">
+                                <label>Landmark (if any)</label>
+                                <input name="Landmark">
+                            </div>
+
+                            <div class="field">
+                                <label>Contact Number (Family)</label>
+                                <input name="Family Contact Number" type="tel">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-heading">4. FAMILY CONTACT DETAILS</div>
+
+                        <div class="form-body">
+
+                            <div class="field">
+                                <label>Name of Responsible Person</label>
+                                <input name="Responsible Person">
+                            </div>
+
+                            <div class="field">
+                                <label>Relationship with Patient</label>
+                                <input name="Relationship with Patient">
+                            </div>
+
+                            <div class="field">
+                                <label>Mobile Number</label>
+                                <input name="Mobile Number" type="tel">
+                            </div>
+
+                            <div class="field">
+                                <label>Alternate Number</label>
+                                <input name="Alternate Number" type="tel">
+                            </div>
+
+                            <div class="field">
+                                <label>Email ID (if any)</label>
+                                <input name="Email ID" type="email">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-group" style="margin-top:20px">
+                    <div class="form-heading">5. TERMS & CONDITIONS</div>
+
+                    <div class="form-body">
+
+                        <div class="field">
+                            <label class="options">
+                                <input type="checkbox" required>
+                                I / We have read, understood and agree to the terms
+                                and conditions of Healing Hands Home Care Nursing Services.
+                            </label>
+                        </div>
+
+                        <div class="field">
+                            <label class="options">
+                                <input type="checkbox" required>
+                                I / We understand that the service includes arranging
+                                nursing staff, coordinating attendance, duty timings,
+                                payment arrangements and other related service matters
+                                as per the agreed terms.
+                            </label>
+                        </div>
+
+                        <p style="margin-top: 10px; margin-bottom: 0;">
+                            <b>
+                                By signing below, I / We confirm that I / We have
+                                read, understood and accept the above terms and conditions.
+                            </b>
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="form-grid" style="margin-top:20px">
+
+                    <div class="form-group">
+                        <div class="form-heading">6. PATIENT / FAMILY CONSENT</div>
+
+                        <div class="form-body">
+
+                            <div class="field">
+                                <label>Signature (type name)</label>
+                                <input name="Signature">
+                            </div>
+
+                            <div class="field">
+                                <label>Date</label>
+                                <input name="Consent Date" type="date">
+                            </div>
+
+                            <div class="field">
+                                <label>Name (in block letters)</label>
+                                <input name="Consent Name">
+                            </div>
+
+                            <div class="field">
+                                <label>Relationship with Patient</label>
+                                <input name="Consent Relationship">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="form-heading">7. FOR AGENCY USE ONLY</div>
+
+                        <div class="form-body">
+
+                            <div class="field">
+                                <label>Form Received By</label>
+                                <input name="Form Received By">
+                            </div>
+
+                            <div class="field">
+                                <label>Date Received</label>
+                                <input name="Date Received" type="date">
+                            </div>
+
+                            <div class="field">
+                                <label>Assigned Nurse Name</label>
+                                <input name="Assigned Nurse Name">
+                            </div>
+
+                            <div class="field">
+                                <label>Duty Start Date</label>
+                                <input name="Duty Start Date" type="date">
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div style="text-align:center;margin-top:24px">
+                    <button class="button" type="submit">
+                        Prepare Request on WhatsApp
+                    </button>
+
+                    <p style="font-size:13px;color:#526d79;margin-top:8px">
+                        Review the WhatsApp message before sending.
+                        This form does not save details to a server.
+                    </p>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <section class="section" id="terms">
+
+        <div class="section-title">
+            HEALING HANDS HOME CARE NURSING SERVICES
+            <br>
+            <small>TERMS & CONDITIONS</small>
+        </div>
+
+        <div class="section-content terms">
+
+            <h3>Please Read Carefully Before Booking Our Services</h3>
+
+            <p>
+                Our purpose is to connect patients and their families with
+                suitable home care nursing staff according to their requirements.
+                We aim to maintain professional communication, privacy,
+                transparency and responsible service coordination.
+            </p>
+
+            <h3>1. Nature of Our Service</h3>
+            <p>
+                Healing Hands Home Care Nursing Services primarily coordinates
+                nursing staff for patients according to their care requirements
+                and staff availability. Our role includes communicating with
+                patients, families and nursing staff regarding duty arrangements,
+                attendance, payment and routine service-related matters.
+            </p>
+
+            <h3>2. Patient's Medical Condition</h3>
+            <ul>
+                <li>Patients and their families must provide accurate information about the patient's medical condition, care requirements and any special needs before booking.</li>
+                <li>Nursing staff should be assigned duties appropriate to their qualifications, experience and competence.</li>
+                <li>We do not guarantee recovery or any particular medical outcome.</li>
+                <li>Home nursing services are not a substitute for emergency medical treatment or hospital care when required.</li>
+                <li>In an emergency, the family must contact the treating doctor or emergency services immediately.</li>
+            </ul>
+
+            <h3>3. Nursing Staff Information</h3>
+            <ul>
+                <li>Nursing staff may have different qualifications, experience and skill levels.</li>
+                <li>Relevant identity, qualification, registration and experience checks will be explained accurately according to the verification actually completed.</li>
+                <li>Patients and families may request available credentials before confirming a nurse.</li>
+                <li>We aim to arrange nursing staff according to the patient's requirements and the information available to us. Specific skills and suitability must be assessed according to the patient's needs.</li>
+            </ul>
+
+            <h3>4. Home Security and Personal Belongings</h3>
+            <ul>
+                <li>Patients and families are advised to secure cash, jewellery, valuables, important documents, keys and other personal belongings.</li>
+                <li>Families should manage access to their home and personal belongings appropriately.</li>
+                <li>Any suspected theft, misconduct, property damage or other incident should be reported promptly to the appropriate authorities and to our service.</li>
+                <li>Healing Hands does not provide a guarantee against theft, loss, misconduct or other incidents involving individuals at the patient's home. Each incident must be assessed according to the facts and applicable law.</li>
+            </ul>
+
+            <h3>5. Scope and Limitation of Responsibility</h3>
+            <ul>
+                <li>Our role is primarily to arrange nursing staff and coordinate routine service-related matters, including attendance, duty timings, payment communication and staff availability.</li>
+                <li>Healing Hands does not guarantee the personal conduct, honesty, independent actions or performance of every individual nursing staff member.</li>
+                <li>We do not guarantee patient recovery or freedom from medical complications, deterioration or other unforeseen events.</li>
+                <li>Disputes, alleged misconduct, theft, property loss, personal injury or medical incidents involving patients, families or nursing staff will be assessed according to the circumstances and applicable law.</li>
+                <li>Our responsibility is limited to the services and commitments agreed upon, subject to applicable legal obligations. Nothing in these terms removes any responsibility that cannot legally be excluded.</li>
+            </ul>
+
+            <h3>6. Service Charges and Payment Policy</h3>
+            <ul>
+                <li>Nursing charges will depend on the patient's condition, level of care required, nursing staff's qualifications and experience, duty hours, shift duration, location and other relevant requirements.</li>
+                <li>All charges, the agency's commission, payment schedule, advance payment (if applicable), overtime and cancellation terms will be communicated before duty begins.</li>
+                <li>Payments from the patient's family must be made to Healing Hands according to the agreed payment schedule.</li>
+                <li>Nursing payments will be settled every 10 days through Healing Hands. The agreed agency commission will be deducted, and the remaining amount will be paid to the concerned nurse.</li>
+                <li>Patients' families must make payments on time. Any delay or payment-related issue must be communicated promptly.</li>
+                <li>Any revision in charges must be discussed and agreed upon in advance.</li>
+            </ul>
+
+            <h3>7. Nursing Staff Conduct</h3>
+            <ul>
+                <li>Nursing staff are expected to treat patients and family members with dignity, respect, patience and professionalism.</li>
+                <li>Staff must respect patient privacy and maintain confidentiality.</li>
+                <li>Theft, harassment, misuse of belongings, unauthorised sharing of private information and other inappropriate conduct are prohibited.</li>
+                <li>Staff must follow agreed duty schedules, handover arrangements and appropriate patient-safety practices.</li>
+                <li>Patients and families are expected to treat nursing staff respectfully and provide a safe working environment.</li>
+            </ul>
+
+            <h3>8. Privacy and Confidentiality</h3>
+            <ul>
+                <li>Patients, families and nursing staff must respect confidential medical information, personal details, photographs, videos and home addresses.</li>
+                <li>Private information must not be shared without proper authorisation, except where legally required.</li>
+                <li>Communication should remain professional and related to legitimate care or service requirements.</li>
+            </ul>
+
+            <h3>9. Complaints and Coordination</h3>
+            <ul>
+                <li>Attendance issues, late arrival, absence, payment concerns and routine service complaints should be reported to Healing Hands promptly.</li>
+                <li>We will communicate with the concerned nursing staff and take reasonable coordination steps within our agreed role.</li>
+                <li>Serious allegations, suspected criminal acts and medical emergencies should also be reported to the appropriate authorities or medical professionals as necessary.</li>
+                <li>Replacement staff may be arranged subject to availability and the agreed service terms. Immediate replacement cannot be guaranteed in every situation.</li>
+            </ul>
+
+            <h3>10. Cancellation and Changes</h3>
+            <ul>
+                <li>Patients and families should inform Healing Hands as early as possible about cancellations, changes in duty hours or changes in patient-care requirements.</li>
+                <li>Refunds, notice periods, replacement arrangements and cancellation charges will follow the terms agreed upon before booking.</li>
+                <li>Services may be suspended or discontinued for appropriate reasons, including non-payment, serious safety concerns or abusive conduct, with due consideration for patient safety and continuity of care.</li>
+            </ul>
+
+            <h3>11. Acceptance of Terms</h3>
+            <p>
+                By booking our services, the patient or authorised family
+                representative confirms that they have been informed of the
+                applicable service scope, nursing charges, payment schedule
+                and terms and conditions.
+            </p>
+
+            <h3>OUR COMMITMENT</h3>
+            <p>
+                Healing Hands Home Care Nursing Services aims to arrange
+                suitable nursing staff and provide clear communication,
+                transparent payment coordination and responsible service support.
+            </p>
+
+            <p>
+                <b>Healing Hands — Motherly Care, Professional Nursing.</b><br>
+                <b>“Nurse Is the Second Name of a Mother.”</b><br>
+                Thank you for trusting Healing Hands Home Care Nursing Services.
+            </p>
+
+            <h3>⚖️ Scope of Service & Limitation of Responsibility</h3>
+            <p>
+                Our role is to coordinate and arrange nursing staff according
+                to the patient's requirements. We also coordinate with nursing
+                staff regarding attendance, duty timings, payment-related matters
+                and routine service communication.
+            </p>
+
+            <h3>Important Terms & Conditions</h3>
+
+            <p>
+                <b>1. Medical Condition & Patient Outcomes</b><br>
+                Every patient's medical condition is different. We do not
+                guarantee recovery or any particular medical outcome. Patient
+                death, deterioration or medical complications may occur due to
+                various circumstances. Responsibility for any incident will be
+                determined according to the facts, the duties of the persons
+                involved and applicable law.
+            </p>
+
+            <p>
+                <b>2. Nursing Care & Professional Conduct</b><br>
+                Nursing staff are expected to perform their duties within their
+                qualifications, competence and authorised scope of practice.
+                Patients and families should communicate care requirements
+                clearly and verify relevant credentials before duty begins.
+            </p>
+
+            <p>
+                <b>3. Theft, Misconduct & Property Loss</b><br>
+                Patients and families should secure their valuables and personal
+                belongings. Any allegation of theft, misbehaviour, harassment,
+                property damage or other misconduct should be reported promptly
+                to the appropriate authorities and to our service. Responsibility
+                will be assessed based on the facts and applicable law.
+            </p>
+
+            <p>
+                <b>4. Our Coordination Responsibilities</b><br>
+                Our coordination role includes communicating with nursing staff
+                regarding attendance, duty schedules, replacements subject to
+                availability, payment coordination and routine service-related
+                concerns. We do not guarantee the personal conduct or performance
+                of any individual beyond the checks and commitments expressly
+                undertaken by us.
+            </p>
+
+            <p>
+                <b>5. Independent Incidents & Disputes</b><br>
+                We are not automatically responsible for every medical incident,
+                personal dispute, act or omission involving a patient, family
+                member or nursing staff member. Each matter will be assessed
+                according to the circumstances and applicable law. Nothing in
+                these terms excludes any legal responsibility that cannot
+                lawfully be excluded.
+            </p>
+
+            <p>
+                <b>6. Clear Communication & Agreement</b><br>
+                The scope of our service, nursing charges, payment schedule,
+                commission, duty arrangements and applicable terms will be
+                communicated before service begins.
+            </p>
+
+            <p>
+                <b>Our Commitment:</b> We aim to arrange suitable nursing staff
+                and provide responsible coordination with clear communication
+                and transparent service terms.
+            </p>
+
+            <h3>💰 Payment Policy & Terms</h3>
+            <ul>
+                <li>All payments must be made by the patient's family directly to the agency.</li>
+                <li>Nursing charges will be decided based on the patient's medical condition, level of care required, nurse's experience and duty hours.</li>
+                <li>Payment must be made on time by the patient's family as per the agreed payment schedule.</li>
+                <li>Nursing payments will be settled every 10 days through the agency.</li>
+                <li>The agency will deduct its pre-agreed service commission and transfer the remaining amount to the concerned nurse.</li>
+                <li>Any delay in payment must be communicated to the agency immediately. Repeated delays or non-payment may result in suspension or discontinuation of services, subject to appropriate arrangements for patient safety.</li>
+                <li>All charges, commission, payment dates and other financial terms must be clearly agreed upon before the commencement of duty.</li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+
+        <h2>Need Home Nursing Support?</h2>
+
+        <p>
+            Call or message us after 4:00 PM to discuss patient requirements,
+            available nursing staff and service charges.
+        </p>
+
+        <p class="phone">8310292329</p>
+
+        <a class="button" href="tel:+918310292329">
+            📞 Call Now
+        </a>
+
+        <a
+            class="button whatsapp"
+            href="https://wa.me/918310292329"
+            target="_blank"
+            rel="noopener"
+        >
+            WhatsApp Us
+        </a>
+
+        <div class="thank-you">
+            Thank you for choosing Healing Hands Home Care Nursing Services. ❤️
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <b>HEALING HANDS HOME CARE NURSING SERVICES</b>
+    <p>Motherly Care, Professional Nursing.</p>
+    <p>Service Area: Mumbai, Maharashtra</p>
+    <p>© <span id="year"></span> Healing Hands</p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+document.getElementById("patientForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const message = [
+        "HEALING HANDS — HOME CARE NURSING SERVICE REQUEST",
+        ...Array.from(formData.entries())
+            .filter(([key, value]) => String(value).trim() !== "")
+            .map(([key, value]) => key + ": " + value),
+        "Terms accepted: Yes"
+    ].join("\n");
+
+    const whatsappURL =
+        "https://wa.me/918310292329?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank", "noopener");
+});
+</script>
+
+</body>
+</html>
